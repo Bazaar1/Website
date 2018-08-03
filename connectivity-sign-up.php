@@ -2,7 +2,7 @@
 define('DB_HOST', 'xo.cpjjpvym5u94.eu-west-2.rds.amazonaws.com');
 define('DB_NAME', 'xo');
 define('DB_USER','root');
-define('DB_PASSWORD','xxxxx');
+define('DB_PASSWORD','Il1k3cuddl3s');
 
 $con=mysql_connect(DB_HOST,DB_USER,DB_PASSWORD) or die("Failed to connect to MySQL: " . mysql_error());
 $db=mysql_select_db(DB_NAME,$con) or die("Failed to connect to MySQL: " . mysql_error());
@@ -19,10 +19,10 @@ function NewUser()
 	{
 	echo "YOUR REGISTRATION IS COMPLETED...";
 	}
-#	else
-#	{
-#	echo "Sorry";
-#	}
+	else
+	{
+	echo "Registartaion Failed. Please try again later";
+	}
 }
 
 function SignUp()
